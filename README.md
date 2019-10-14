@@ -31,3 +31,20 @@
  10. General permission -> turn on arministration permission
 
  ![permissions](screenshots/Screenshot_2.png)
+
+ 11. Edit Channel -> permissions -> roles -> muted -> send message nothing
+
+ ![permissions](screenshots/Screenshot_3.png)
+
+ ![mute send nothing](screenshots/Screenshot_4.png)
+
+ 12. Anyone who has the role able to send the message -> Allow anyone to mention this role
+
+ ![role setting](screenshots/Screenshot_5.png)
+ 
+ 13. to get the id message `\@muted` 
+
+---
+
+ 14. remove role to show role by clicking on name in general message
+

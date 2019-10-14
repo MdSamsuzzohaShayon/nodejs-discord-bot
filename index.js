@@ -62,6 +62,12 @@ client.on('message', msg => {
         case "deleteme":
             msg.delete();
             break;
+        case "mute":
+            let target = msg.mentions.members().first();
+            // REMOVE ROLE FROM GENERAL TO SHOW ROLE 
+            msg.member.addRole('633343145773367296');
+            msg.reply('Added mute role');
+            break;
     }
 });
 
