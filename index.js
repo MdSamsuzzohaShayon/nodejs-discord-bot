@@ -45,6 +45,7 @@ client.on('message', msg => {
     }*/
 
     switch (dltUscoreCommand[0]) {
+
         case 'Hi':
             let sayHi = () => {
                 msg.reply('Hello!');
@@ -58,15 +59,18 @@ client.on('message', msg => {
                 sayHi()
             }
             break;
+            
             // https://discord.js.org/#/docs/main/stable/class/Message    //message delete event
         case "deleteme":
             msg.delete();
             break;
+
         case "mute":
-            let target = msg.mentions.members().first();
+            let target = msg.mentions.members.first();  //     https://discord.js.org/#/docs/main/stable/class/Collection?scrollTo=first
             // REMOVE ROLE FROM GENERAL TO SHOW ROLE 
-            msg.member.addRole('633343145773367296');
-            msg.reply('Added mute role');
+            target.addRole('633343145773367296');
+            // mute @shayon#9352 
+            msg.reply('Added mute role to: '+ target.displayName); //   https://discord.js.org/#/docs/main/stable/class/GuildMember?scrollTo=displayName
             break;
     }
 });

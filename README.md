@@ -48,3 +48,7 @@
 
  14. remove role to show role by clicking on name in general message
 
+ ![role setting](screenshots/Screenshot_6.png)
+
+ ![role setting](screenshots/Screenshot_7.png)
+
