@@ -9,5 +9,12 @@
 
  ### Discordapp
 
- 1. __https://discordapp.com/__ -> Developers -> Developer Portal -> New Application -> NameAny
- 2. Bot -> Add Bot -> AnyName
+ 1. go to __https://discordapp.com/__ and register -> varify with mail and phone number -> Set server name
+ 2. __https://discordapp.com/__ -> Developers -> Developer Portal -> New Application -> NameAny
+ 3. Bot -> Add Bot -> AnyName
+ 4. Packages we need **discord.js, minimist, dotenv**
+ 5. `npm install discord.js minimist dotenv`
+ 6. Bot -> Copy Token -> Use it in the project
+ 7. Get Client ID from My Application -> General Information -> Copy Client ID
+ 8. Make sure app is running -> got to __https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot__
+ 7. Add a bot to a server -> select your server
