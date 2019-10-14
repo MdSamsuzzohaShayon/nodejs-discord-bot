@@ -20,3 +20,14 @@
  7. Add a bot to a server -> select your server
 
 ---
+
+ 8. [Delete event](https://discord.js.org/#/docs/main/stable/class/Message)
+ 9. descord channel -> servarname dropdown -> server setting -> roles -> Click plus icon -> set new role name
+
+ ![servername](screenshots/Screenshot_0.png)
+
+ ![add roles](screenshots/Screenshot_1.png)
+
+ 10. General permission -> turn on arministration permission
+
+ ![permissions](screenshots/Screenshot_2.png)

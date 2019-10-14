@@ -6,9 +6,15 @@ const client = new Discord.Client();
 
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+    console.log(`Logged in as ${client.user.tag}!`);
 });
 
+
+
+
+
+// THIS IS A MESSAGE EVENT 
+// https://discord.js.org/#/docs/main/stable/class/Message  // ALL PROPERTIES AND METHODS
 client.on('message', msg => {
     console.log(msg.content);
 
@@ -24,35 +30,39 @@ client.on('message', msg => {
     let dltUscoreCommand = command._;
     let opts = parseArgs(msgarr);
     delete opts._
-    console.log("Delete underscore in the array  : "+ dltUscoreCommand);
+    console.log("Delete underscore in the array  : " + dltUscoreCommand);
     console.log("Options  : " + opts);
-    
-    
-    
-    
-    
-  /*
-  if (msg.content === 'ping') {
-    //   IT MEANS IF WE WRITE PING IN OUR SERVER MESSAGE THE BOT REPLIED PONG
-    // AND  IF I WRITE ANY MESSAGE IT WILL LOG TO CONSOLE
-    msg.reply('Pong!');
-  }*/
 
-  switch(dltUscoreCommand[0]){
-      case 'Hi':
-          let sayHi =()=>{
-              msg.reply('Hello!');
-          }
-        //   IT THERE IS A DELAY OPTION IT WILL WAIT FOR DELAY
-          if('delay' in opts){
-              setTimeout(sayHi, opts.delay);
-              console.log("delayed");
-              
-          }else{
-              sayHi()
-          }
-          break;
-  }
+
+
+
+
+    /*
+    if (msg.content === 'ping') {
+      //   IT MEANS IF WE WRITE PING IN OUR SERVER MESSAGE THE BOT REPLIED PONG
+      // AND  IF I WRITE ANY MESSAGE IT WILL LOG TO CONSOLE
+      msg.reply('Pong!');
+    }*/
+
+    switch (dltUscoreCommand[0]) {
+        case 'Hi':
+            let sayHi = () => {
+                msg.reply('Hello!');
+            }
+            //   IT THERE IS A DELAY OPTION IT WILL WAIT FOR DELAY
+            if ('delay' in opts) {
+                setTimeout(sayHi, opts.delay);
+                console.log("delayed");
+
+            } else {
+                sayHi()
+            }
+            break;
+            // https://discord.js.org/#/docs/main/stable/class/Message    //message delete event
+        case "deleteme":
+            msg.delete();
+            break;
+    }
 });
 
 client.login(process.env.SECRET);
