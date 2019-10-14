@@ -18,3 +18,5 @@
  7. Get Client ID from My Application -> General Information -> Copy Client ID
  8. Make sure app is running -> got to __https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot__
  7. Add a bot to a server -> select your server
+
+---
