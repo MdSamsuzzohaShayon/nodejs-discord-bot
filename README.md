@@ -1,6 +1,6 @@
 # NodeJS Discord Bot
 
-### Tutorials
+### Doscord Tutorials
 
  - [5 - BASICS | Discord Bot Coding Tutorial #1 (Node JS & Discord JS](https://www.youtube.com/watch?v=-5jJaO17Gjs&list=PLQr7YhA3gqmIJyvQiZID8ZnR0bxDFrgnv)
  - [6 - DiscordJS (Updated 2018) Tutorial Ep. 1 - How to have your bot respond to user messages](https://www.youtube.com/watch?v=7rsPEsYxvxs&list=PL_cUvD4qzbkwZoWgG0hrSUCeQOPnjTAps)
@@ -57,5 +57,11 @@
 
  # Google Drive API
 
- 
+### Drive API Tutorials
 
+ - [Google Drive API V3 - Uploading Files to your Google Drive in Javascript](https://www.youtube.com/watch?v=VacgcdYz6-g)
+ - [Google Picker API](https://www.youtube.com/watch?v=3V0LoGakHDU)
+ - [Google Drive API: Uploading, Viewing, Downloading & Deleting Files](https://www.youtube.com/watch?v=aTv5t7oH6X8)
+ - [Google Drive API V3 - Uploading Files to your Google Drive in Javascript](https://www.youtube.com/watch?v=VacgcdYz6-g)
+ - [Google Drive API Tutorial in NodeJs - service account settings.](https://www.youtube.com/watch?v=gGSJpp6_ax0&t=397s)
+ - [Google Drive API v3 - Manage Share & Set User Role Permissions - C#](https://www.youtube.com/watch?v=9VTHAiEbCB4)
