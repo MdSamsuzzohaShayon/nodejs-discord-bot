@@ -9,6 +9,7 @@
   "author": "Md Shayon",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^8.1.0"
+    "dotenv": "^8.1.0",
+    "googleapis": "^39.2.0"
   }
 }
