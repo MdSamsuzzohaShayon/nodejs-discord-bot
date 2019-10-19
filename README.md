@@ -81,4 +81,42 @@
  - [Quick Start](https://developers.google.com/sheets/api/quickstart/nodejs)
  - [OAuth 2.0 Scopes for Google APIs](https://developers.google.com/identity/protocols/googlescopes)
  - [OAuth 2.0 Scopes for Google APIs **Identity Protocals**](https://developers.google.com/identity/protocols/googlescopes#sheetsv4)
- - []
+ - [Google Cloud Console](https://console.cloud.google.com)
+
+ 1. Enable google sheet api
+
+ ![Enable api](screenshots/Screenshot_11.png)
+
+ ![Enable api](screenshots/Screenshot_12.png)
+
+ 2. Create Credentials
+
+ ![Credentials](screenshots/Screenshot_14.png)
+
+ ![Credentials](screenshots/Screenshot_15.png)
+
+ 3. Create APi key
+
+ ![Credentials](screenshots/Screenshot_18.png)
+
+ 4. Create Service Account And Download JSON file
+
+ ![Credentials](screenshots/Screenshot_19.png)
+
+ ![Credentials](screenshots/Screenshot_20.png)
+
+ 5. Copy google sheet ID from url (after __https://docs.google.com/spreadsheets/d/__ and before __/edit#gid=1856000146__ id is placed)
+
+ ![sheet id](screenshots/Screenshot_21.png)
+
+ 6. Go to manage service account get the email 
+
+ ![manage account](screenshots/Screenshot_22.png)
+
+ ![email](screenshots/Screenshot_23.png)
+
+ 7. share sheet with it
+
+ ![sheet id](screenshots/Screenshot_24.png)
+
+ 7. 
