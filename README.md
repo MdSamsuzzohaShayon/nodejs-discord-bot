@@ -74,3 +74,11 @@
 ### Tutorials
  
  - [Google Sheets API - JavaScript NodeJS Tutorial](https://www.youtube.com/watch?v=MiPpQzW_ya0)
+
+
+### Documents
+
+ - [Quick Start](https://developers.google.com/sheets/api/quickstart/nodejs)
+ - [OAuth 2.0 Scopes for Google APIs](https://developers.google.com/identity/protocols/googlescopes)
+ - [OAuth 2.0 Scopes for Google APIs **Identity Protocals**](https://developers.google.com/identity/protocols/googlescopes#sheetsv4)
+ - []
