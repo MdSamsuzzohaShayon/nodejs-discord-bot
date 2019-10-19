@@ -84,6 +84,17 @@
  - [Google Drive API Tutorial in NodeJs - service account settings.](https://www.youtube.com/watch?v=gGSJpp6_ax0&t=397s)
  - [Google Drive API v3 - Manage Share & Set User Role Permissions - C#](https://www.youtube.com/watch?v=9VTHAiEbCB4)
 
+### [Quick start](https://developers.google.com/drive/api/v3/quickstart/nodejs)
+
+ 1. Enable the drive API
+ 2. Install the client library
+ 3. Set up the sample
+ 4. run the code -> that will give a url go there and varify -> they will give a code copy that and paste it in the console
+ 5. token.json will be downloaded automitically
+
+
+### Custom start
+
  1. Enable google drive API and manage API
 
  ![id](screenshots/Screenshot_26.png)
@@ -102,3 +113,4 @@
  5. Get client email from service account download file
 
  ![share file](screenshots/Screenshot_30.png)
+

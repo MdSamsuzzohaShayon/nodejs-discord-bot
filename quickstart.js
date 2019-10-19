@@ -1,7 +1,3 @@
-// https://www.youtube.com/watch?v=XfZcrXsUYRc
-// https://developers.google.com/drive/api/v3/quickstart/nodejs
-
-
 const fs = require('fs');
 const readline = require('readline');
 const {google} = require('googleapis');
