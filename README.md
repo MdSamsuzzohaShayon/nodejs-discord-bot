@@ -57,6 +57,24 @@
 
  # Google Drive API
 
+### Similer project
+
+ - [GetFileList_js](https://github.com/tanaikech/GetFileList_js)
+
+ <!--This is a Javascript library to retrieve the file list with the folder tree from the specific folder (publicly shared folders and own folders) of Google Drive.-->
+
+ - [bandrec](https://github.com/derylspielman/bandrec)
+
+ <!--Node.js script to convert recordings from wav to mp3 and upload them to Google Drive for sharing.-->
+
+ - [Blackmail_Gallery_Project](https://github.com/regeanish/Blackmail_Gallery_Project)
+
+ <!--Created successfully a photo sharing application where user an upload incriminating photos and post the list of demands. User needs to create a new account and login to his account to upload incriminating photos from his local drive to website. A login form was created for authenticating and validating by doing AJAX calls from client side to ser…-->
+
+ - [gdrive-file-info](https://github.com/vladimyr/gdrive-file-info)
+
+ <!--Google Drive node client for retrieving file info of publicly shared items.-->
+
 ### Drive API Tutorials
 
  - [Google Drive API V3 - Uploading Files to your Google Drive in Javascript](https://www.youtube.com/watch?v=VacgcdYz6-g)
