@@ -65,3 +65,22 @@
  - [Google Drive API V3 - Uploading Files to your Google Drive in Javascript](https://www.youtube.com/watch?v=VacgcdYz6-g)
  - [Google Drive API Tutorial in NodeJs - service account settings.](https://www.youtube.com/watch?v=gGSJpp6_ax0&t=397s)
  - [Google Drive API v3 - Manage Share & Set User Role Permissions - C#](https://www.youtube.com/watch?v=9VTHAiEbCB4)
+
+ 1. Enable google drive API and manage API
+
+ ![id](screenshots/Screenshot_26.png)
+
+ 2. Create service account key and download and rename
+
+ ![service account](screenshots/Screenshot_28.png)
+
+ ![json file](screenshots/Screenshot_29.png)
+
+  3. Get ID of the folder 
+
+ ![id](screenshots/Screenshot_25.png)
+
+ 4. Go to google drive -> right click and share the folder 
+ 5. Get client email from service account download file
+
+ ![share file](screenshots/Screenshot_30.png)
