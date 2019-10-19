@@ -56,6 +56,18 @@ gsrun = async (cl) => {
     console.log('\n---------------------------------------------------\n');
 
     let dataArray = data.data.values;
+
+    dataArray = dataArray.map(r=>{
+        while(r.length < 11){
+            r.push('');
+        }
+        return r;
+    });
+
+
+
+
+
     let newDataArray = dataArray.map(r => {
         r.push(r[0] + '-' + r[1])
         return r;
@@ -65,15 +77,18 @@ gsrun = async (cl) => {
     console.log('\n---------------------------------------------------\n');
 
 
+    // SETTING OPTIONS TO EDIT SHEET 
     // https://developers.google.com/sheets/api/reference/rest/v4/spreadsheets.values/update
     const updateOptions = {
         spreadsheetId: keysOpt.spreadsheetId,
-        range: 'B17',
+        range: 'A20',
         valueInputOption: "USER_ENTERED",
         resource: {
             values: newDataArray
         }
     };
+
+    // THIS WILL UPDATE GOOGLE SHEET
     let res = await gsapi.spreadsheets.values.update(updateOptions);
     console.log(res);
 }
