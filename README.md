@@ -77,7 +77,6 @@
 
 ### Drive API Tutorials
 
- - [Google Drive API V3 - Uploading Files to your Google Drive in Javascript](https://www.youtube.com/watch?v=VacgcdYz6-g)
  - [Google Picker API](https://www.youtube.com/watch?v=3V0LoGakHDU)
  - [Google Drive API: Uploading, Viewing, Downloading & Deleting Files](https://www.youtube.com/watch?v=aTv5t7oH6X8)
  - [Google Drive API V3 - Uploading Files to your Google Drive in Javascript](https://www.youtube.com/watch?v=VacgcdYz6-g)
