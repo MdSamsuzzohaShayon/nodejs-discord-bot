@@ -20,7 +20,10 @@ const TOKEN_PATH = './config/token.json';
 fs.readFile('./config/credentials.json', (err, content) => {
     if (err) return console.log('Error loading client secret file:', err);
     // Authorize a client with credentials, then call the Google Drive API.
-    authorize(JSON.parse(content), listFiles);
+    // authorize(JSON.parse(content), listFiles);
+
+    // GETTING SPECEFIC FILE
+    authorize(JSON.parse(content), getFile);
 });
 
 /**
@@ -42,7 +45,8 @@ function authorize(credentials, callback) {
     fs.readFile(TOKEN_PATH, (err, token) => {
         if (err) return getAccessToken(oAuth2Client, callback);
         oAuth2Client.setCredentials(JSON.parse(token));
-        callback(oAuth2Client);
+        // callback(oAuth2Client); // GET ALL FILES
+        callback(oAuth2Client, '1YEVHGnm3_ju0m-QhIIE87IZ9GIfBIz44gce366h3Psc'); // GET SPECEFIC FILE
     });
 }
 
@@ -118,5 +122,18 @@ function processList(files){
     files.forEach(file => {
         console.log("File name: "+ file.name + "\n file size: "+ file.size + "\n created time: "+ file.createdTime);             
         console.log(file);        
+    });
+}
+
+
+function getFile(auth, fileId){
+    const drive = google.drive({version: 'v3', auth});
+    drive.files.get({
+        fileId,
+        fields: '*',
+    }, (err, res) => {
+        if (err) return console.log('The API returned an error: ' + err);
+        console.log(res.data);
+        
     });
 }
