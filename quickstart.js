@@ -10,7 +10,7 @@ const {
 } = require('googleapis');
 
 // If modifying these scopes, delete token.json.
-const SCOPES = ['https://www.googleapis.com/auth/drive.metadata.readonly'];
+const SCOPES = ['https://www.googleapis.com/auth/drive'];
 // The file token.json stores the user's access and refresh tokens, and is
 // created automatically when the authorization flow completes for the first
 // time.
@@ -20,10 +20,17 @@ const TOKEN_PATH = './config/token.json';
 fs.readFile('./config/credentials.json', (err, content) => {
     if (err) return console.log('Error loading client secret file:', err);
     // Authorize a client with credentials, then call the Google Drive API.
+
+    // GETTING ALL FILE 
     // authorize(JSON.parse(content), listFiles);
 
     // GETTING SPECEFIC FILE
-    authorize(JSON.parse(content), getFile);
+    // authorize(JSON.parse(content), getFile);
+
+
+    // UPLOAD FILES
+    authorize(JSON.parse(content), uploadFile);
+
 });
 
 /**
@@ -45,8 +52,8 @@ function authorize(credentials, callback) {
     fs.readFile(TOKEN_PATH, (err, token) => {
         if (err) return getAccessToken(oAuth2Client, callback);
         oAuth2Client.setCredentials(JSON.parse(token));
-        // callback(oAuth2Client); // GET ALL FILES
-        callback(oAuth2Client, '1YEVHGnm3_ju0m-QhIIE87IZ9GIfBIz44gce366h3Psc'); // GET SPECEFIC FILE
+        callback(oAuth2Client); // GET ALL FILES
+        // callback(oAuth2Client, '1YEVHGnm3_ju0m-QhIIE87IZ9GIfBIz44gce366h3Psc'); // GET SPECEFIC FILE
     });
 }
 
@@ -136,4 +143,27 @@ function getFile(auth, fileId){
         console.log(res.data);
         
     });
+}
+
+
+function uploadFile(auth){
+    const drive = google.drive({version: 'v3', auth});
+    let fileMetadata = {"name": "test.jpg"};
+    let media = {
+        mimeType: 'image/jpeg',
+        body: fs.createReadStream('test.jpg')
+    };
+    drive.files.create({
+        resource: fileMetadata,
+        media,
+        fields: 'id',
+    },
+    (err, res)=>{
+        if(err){
+            console.log("An error to upload file:  " +err);
+        }else{
+            console.log("file ID: ", res.data.id);
+        }
+    }
+    )
 }
