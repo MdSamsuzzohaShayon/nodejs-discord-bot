@@ -11,6 +11,6 @@
   "dependencies": {
     "discord.js": "^11.5.1",
     "dotenv": "^8.1.0",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.3"
   }
 }
